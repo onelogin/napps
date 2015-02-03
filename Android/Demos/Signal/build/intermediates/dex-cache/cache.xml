@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Volumes/DATA/WORK/OneLogin/Android/signal-android/app/build/intermediates/pre-dexed/debug/napps_sdk-bf8b89346ec9bad9ece724b1f06e890ddca4bd8d.jar"
+        jar="/Volumes/DATA/WORK/OneLogin/Android/signal-android/app/libs/napps_sdk.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f828c0abdac997753c8a619b6dea95a0ed8c575a"/>
+
+</pre-dex-items>

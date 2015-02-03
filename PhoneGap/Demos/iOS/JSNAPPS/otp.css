@@ -1,0 +1,190 @@
+body {
+	background-color:#FFF;
+	text-align:center;
+	color:#737778;
+	margin:18px;
+	font-family:'Open Sans',sans-serif;
+	
+
+}
+
+
+
+#container
+{
+	width:100%;
+	display:block;
+	background-color:#FFF;
+	 
+	height:100%;
+}
+
+
+#progress
+{
+	position:absolute;
+	margin:0;
+	padding:0;
+	
+	margin-left:-18px; 
+	background-color:#f7f7f7;
+	width:100%;
+	height:4px;
+	bottom: 120px;
+}
+
+#progress-bar {
+	background-color:#007698;
+	width:0;
+	height:4px;
+}
+
+#footer
+{
+	width:100% ;
+	
+	position: fixed;	
+	bottom: 0px;
+	padding: 0px;
+	margin: 0px;
+	height:100px;
+}
+
+.submission
+{
+	margin-left:0px;
+	margin-right: 36px;;
+}
+
+
+.content
+{
+	width:100%;
+	padding:0;
+	margin:0;
+	background-color:#f7f7f7;
+	clear:left;
+	float:left;
+	vertical-align:middle;
+}
+
+.header {
+	height:60px;
+}
+
+.otp {
+	background-color:#ebeded;
+	height:85px;
+}
+
+.countdown {
+	height:65px;
+}
+
+.credential {
+	background-color:#f7f7f7;
+	margin-top:4px;
+	height:51px;
+}
+
+h2 {
+	margin:0;
+}
+
+.header h2 {
+	padding-top:20px;
+	font-size:18px;
+	font-weight:700;
+}
+
+.countdown h2 {
+	padding-top:20px;
+    padding-left:15px;
+    margin-left:15px;
+	font-size:15px;
+	font-weight:600;
+}
+
+.credential a {
+	padding-top:40px;
+	font-size:15px;
+	font-weight:600;
+    text-decoration:none;
+    line-height:40px;
+	height:40px;
+}
+
+a {
+	color:#737778;
+}
+
+a:hover {
+	color:#737778;
+}
+
+a:active {
+	color:#737778;
+}
+
+.otp a {
+	font-size:45px;
+	font-weight:700;
+	text-decoration:none;
+	line-height:88px;
+	height:88px;
+}
+
+.otpheader {
+	font-size:45px;
+	font-weight:700;
+	text-decoration:none;
+	line-height:88px;
+	height:88px;
+}
+
+
+.send-btn
+{
+	background-color:#00b5cb;
+		
+	display:block;
+	
+	
+	padding: 0px;
+	margin: 0px;
+	
+	width: 100%;
+
+	color:#fff;
+	font-size:30px;
+	font-weight:300;
+	height:80px;
+	line-height:80px;
+
+	text-decoration:none;
+	text-align:center;
+}
+
+.send-btn:active {
+	color:#fff;
+	background-color:#007698;
+}
+
+.send-btn:hover {
+	color:#fff;
+}
+
+.send-btn:visited {
+	color:#fff;
+}
+
+
+
+
+
+.timer {
+	position:absolute;
+	width:32px;
+	padding-left:18%;
+	padding-top:5px;
+}

@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF2E9E781A8140E2008836A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9E771A8140E2008836A4 /* main.m */; };
+		DF2E9E7B1A8140E2008836A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9E7A1A8140E2008836A4 /* AppDelegate.m */; };
+		DF2E9E831A8140E2008836A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2E9E821A8140E2008836A4 /* Images.xcassets */; };
+		DF2E9E921A8140E2008836A4 /* SignalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9E911A8140E2008836A4 /* SignalTests.m */; };
+		DF2E9E9D1A814153008836A4 /* OneLoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2E9E9C1A814153008836A4 /* OneLoginSDK.framework */; };
+		DF2E9EA01A814171008836A4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2E9E9F1A814171008836A4 /* Storyboard.storyboard */; };
+		DF2E9EA41A8141AF008836A4 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9EA31A8141AF008836A4 /* InitialViewController.m */; };
+		DF2E9EA81A8155FA008836A4 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9EA71A8155FA008836A4 /* APIManager.m */; };
+		DF2E9EAE1A815AAD008836A4 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9EAD1A815AAD008836A4 /* TweetsViewController.m */; };
+		DF2E9EB21A815B75008836A4 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9EB11A815B75008836A4 /* Tweet.m */; };
+		DF2E9EB51A8176F7008836A4 /* TweetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9EB41A8176F7008836A4 /* TweetTableViewCell.m */; };
+		DF2E9ECB1A817993008836A4 /* OLNetworkImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9EC51A817993008836A4 /* OLNetworkImageLoader.m */; };
+		DF2E9ED31A817B6E008836A4 /* UIColor+OLUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E9ED01A817B6E008836A4 /* UIColor+OLUIKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF2E9E8C1A8140E2008836A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2E9E6A1A8140E2008836A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF2E9E711A8140E2008836A4;
+			remoteInfo = Signal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF2E9E721A8140E2008836A4 /* Signal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2E9E761A8140E2008836A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2E9E771A8140E2008836A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF2E9E791A8140E2008836A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF2E9E7A1A8140E2008836A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF2E9E821A8140E2008836A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF2E9E8B1A8140E2008836A4 /* SignalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2E9E901A8140E2008836A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2E9E911A8140E2008836A4 /* SignalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalTests.m; sourceTree = "<group>"; };
+		DF2E9E9C1A814153008836A4 /* OneLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLoginSDK.framework; sourceTree = "<group>"; };
+		DF2E9E9F1A814171008836A4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DF2E9EA21A8141AF008836A4 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		DF2E9EA31A8141AF008836A4 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		DF2E9EA61A8155FA008836A4 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		DF2E9EA71A8155FA008836A4 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		DF2E9EAC1A815AAD008836A4 /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		DF2E9EAD1A815AAD008836A4 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
+		DF2E9EB01A815B75008836A4 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		DF2E9EB11A815B75008836A4 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		DF2E9EB31A8176F7008836A4 /* TweetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetTableViewCell.h; sourceTree = "<group>"; };
+		DF2E9EB41A8176F7008836A4 /* TweetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTableViewCell.m; sourceTree = "<group>"; };
+		DF2E9EBB1A817993008836A4 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		DF2E9EC21A817993008836A4 /* OLFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLFoundation.h; sourceTree = "<group>"; };
+		DF2E9EC41A817993008836A4 /* OLNetworkImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLNetworkImageLoader.h; sourceTree = "<group>"; };
+		DF2E9EC51A817993008836A4 /* OLNetworkImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLNetworkImageLoader.m; sourceTree = "<group>"; };
+		DF2E9ECF1A817B6E008836A4 /* UIColor+OLUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+OLUIKit.h"; sourceTree = "<group>"; };
+		DF2E9ED01A817B6E008836A4 /* UIColor+OLUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OLUIKit.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF2E9E6F1A8140E2008836A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E9E9D1A814153008836A4 /* OneLoginSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2E9E881A8140E2008836A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF2E9E691A8140E2008836A4 = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E741A8140E2008836A4 /* Signal */,
+				DF2E9E8E1A8140E2008836A4 /* SignalTests */,
+				DF2E9E731A8140E2008836A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF2E9E731A8140E2008836A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E721A8140E2008836A4 /* Signal.app */,
+				DF2E9E8B1A8140E2008836A4 /* SignalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF2E9E741A8140E2008836A4 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9ECD1A817B6E008836A4 /* OLUIKit */,
+				DF2E9EB91A817993008836A4 /* OLFoundation */,
+				DF2E9EAF1A815B5D008836A4 /* Model */,
+				DF2E9EA51A8155E6008836A4 /* APIManager */,
+				DF2E9E791A8140E2008836A4 /* AppDelegate.h */,
+				DF2E9E7A1A8140E2008836A4 /* AppDelegate.m */,
+				DF2E9EA11A814195008836A4 /* Controllers */,
+				DF2E9E9E1A814160008836A4 /* Views */,
+				DF2E9E9B1A814128008836A4 /* Frameworks */,
+				DF2E9E821A8140E2008836A4 /* Images.xcassets */,
+				DF2E9E751A8140E2008836A4 /* Supporting Files */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		DF2E9E751A8140E2008836A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E761A8140E2008836A4 /* Info.plist */,
+				DF2E9E771A8140E2008836A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF2E9E8E1A8140E2008836A4 /* SignalTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E911A8140E2008836A4 /* SignalTests.m */,
+				DF2E9E8F1A8140E2008836A4 /* Supporting Files */,
+			);
+			path = SignalTests;
+			sourceTree = "<group>";
+		};
+		DF2E9E8F1A8140E2008836A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E901A8140E2008836A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF2E9E9B1A814128008836A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E9C1A814153008836A4 /* OneLoginSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF2E9E9E1A814160008836A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9E9F1A814171008836A4 /* Storyboard.storyboard */,
+				DF2E9EB31A8176F7008836A4 /* TweetTableViewCell.h */,
+				DF2E9EB41A8176F7008836A4 /* TweetTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF2E9EA11A814195008836A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9EA21A8141AF008836A4 /* InitialViewController.h */,
+				DF2E9EA31A8141AF008836A4 /* InitialViewController.m */,
+				DF2E9EAC1A815AAD008836A4 /* TweetsViewController.h */,
+				DF2E9EAD1A815AAD008836A4 /* TweetsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF2E9EA51A8155E6008836A4 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9EA61A8155FA008836A4 /* APIManager.h */,
+				DF2E9EA71A8155FA008836A4 /* APIManager.m */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		DF2E9EAF1A815B5D008836A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9EB01A815B75008836A4 /* Tweet.h */,
+				DF2E9EB11A815B75008836A4 /* Tweet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF2E9EB91A817993008836A4 /* OLFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9EBB1A817993008836A4 /* Macros.h */,
+				DF2E9EC21A817993008836A4 /* OLFoundation.h */,
+				DF2E9EC41A817993008836A4 /* OLNetworkImageLoader.h */,
+				DF2E9EC51A817993008836A4 /* OLNetworkImageLoader.m */,
+			);
+			path = OLFoundation;
+			sourceTree = "<group>";
+		};
+		DF2E9ECD1A817B6E008836A4 /* OLUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E9ECF1A817B6E008836A4 /* UIColor+OLUIKit.h */,
+				DF2E9ED01A817B6E008836A4 /* UIColor+OLUIKit.m */,
+			);
+			path = OLUIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF2E9E711A8140E2008836A4 /* Signal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2E9E951A8140E2008836A4 /* Build configuration list for PBXNativeTarget "Signal" */;
+			buildPhases = (
+				DF2E9E6E1A8140E2008836A4 /* Sources */,
+				DF2E9E6F1A8140E2008836A4 /* Frameworks */,
+				DF2E9E701A8140E2008836A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Signal;
+			productName = Signal;
+			productReference = DF2E9E721A8140E2008836A4 /* Signal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF2E9E8A1A8140E2008836A4 /* SignalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2E9E981A8140E2008836A4 /* Build configuration list for PBXNativeTarget "SignalTests" */;
+			buildPhases = (
+				DF2E9E871A8140E2008836A4 /* Sources */,
+				DF2E9E881A8140E2008836A4 /* Frameworks */,
+				DF2E9E891A8140E2008836A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF2E9E8D1A8140E2008836A4 /* PBXTargetDependency */,
+			);
+			name = SignalTests;
+			productName = SignalTests;
+			productReference = DF2E9E8B1A8140E2008836A4 /* SignalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF2E9E6A1A8140E2008836A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = OneLogin;
+				TargetAttributes = {
+					DF2E9E711A8140E2008836A4 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DF2E9E8A1A8140E2008836A4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DF2E9E711A8140E2008836A4;
+					};
+				};
+			};
+			buildConfigurationList = DF2E9E6D1A8140E2008836A4 /* Build configuration list for PBXProject "Signal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF2E9E691A8140E2008836A4;
+			productRefGroup = DF2E9E731A8140E2008836A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF2E9E711A8140E2008836A4 /* Signal */,
+				DF2E9E8A1A8140E2008836A4 /* SignalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF2E9E701A8140E2008836A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E9E831A8140E2008836A4 /* Images.xcassets in Resources */,
+				DF2E9EA01A814171008836A4 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2E9E891A8140E2008836A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF2E9E6E1A8140E2008836A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E9EA81A8155FA008836A4 /* APIManager.m in Sources */,
+				DF2E9EAE1A815AAD008836A4 /* TweetsViewController.m in Sources */,
+				DF2E9ECB1A817993008836A4 /* OLNetworkImageLoader.m in Sources */,
+				DF2E9EA41A8141AF008836A4 /* InitialViewController.m in Sources */,
+				DF2E9EB21A815B75008836A4 /* Tweet.m in Sources */,
+				DF2E9ED31A817B6E008836A4 /* UIColor+OLUIKit.m in Sources */,
+				DF2E9EB51A8176F7008836A4 /* TweetTableViewCell.m in Sources */,
+				DF2E9E7B1A8140E2008836A4 /* AppDelegate.m in Sources */,
+				DF2E9E781A8140E2008836A4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2E9E871A8140E2008836A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E9E921A8140E2008836A4 /* SignalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF2E9E8D1A8140E2008836A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF2E9E711A8140E2008836A4 /* Signal */;
+			targetProxy = DF2E9E8C1A8140E2008836A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF2E9E931A8140E2008836A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF2E9E941A8140E2008836A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF2E9E961A8140E2008836A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Signal/Frameworks",
+				);
+				INFOPLIST_FILE = Signal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF2E9E971A8140E2008836A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Signal/Frameworks",
+				);
+				INFOPLIST_FILE = Signal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF2E9E991A8140E2008836A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SignalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Signal.app/Signal";
+			};
+			name = Debug;
+		};
+		DF2E9E9A1A8140E2008836A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SignalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Signal.app/Signal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF2E9E6D1A8140E2008836A4 /* Build configuration list for PBXProject "Signal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2E9E931A8140E2008836A4 /* Debug */,
+				DF2E9E941A8140E2008836A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF2E9E951A8140E2008836A4 /* Build configuration list for PBXNativeTarget "Signal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2E9E961A8140E2008836A4 /* Debug */,
+				DF2E9E971A8140E2008836A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF2E9E981A8140E2008836A4 /* Build configuration list for PBXNativeTarget "SignalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2E9E991A8140E2008836A4 /* Debug */,
+				DF2E9E9A1A8140E2008836A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF2E9E6A1A8140E2008836A4 /* Project object */;
+}

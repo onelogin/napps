@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF3A0409192A6D5A001F48B7 /* OLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A0408192A6D5A001F48B7 /* OLModel.m */; };
+		DF3A040C192A791A001F48B7 /* OLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A040B192A791A001F48B7 /* OLApplication.m */; };
+		DF3A040F192A829D001F48B7 /* OLAddAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A040E192A829D001F48B7 /* OLAddAppViewController.m */; };
+		DFAF1994193666AB00D44C9F /* OLSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAF1993193666AB00D44C9F /* OLSettingsViewController.m */; };
+		DFD6461B1A02F360007C42C2 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6461A1A02F360007C42C2 /* Utils.m */; };
+		DFE7FC021926824F00FBC5FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7FC011926824F00FBC5FF /* Foundation.framework */; };
+		DFE7FC041926824F00FBC5FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7FC031926824F00FBC5FF /* CoreGraphics.framework */; };
+		DFE7FC061926824F00FBC5FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7FC051926824F00FBC5FF /* UIKit.framework */; };
+		DFE7FC0C1926824F00FBC5FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFE7FC0A1926824F00FBC5FF /* InfoPlist.strings */; };
+		DFE7FC0E1926824F00FBC5FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE7FC0D1926824F00FBC5FF /* main.m */; };
+		DFE7FC121926824F00FBC5FF /* OLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE7FC111926824F00FBC5FF /* OLAppDelegate.m */; };
+		DFE7FC141926824F00FBC5FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE7FC131926824F00FBC5FF /* Images.xcassets */; };
+		DFE7FC1B1926824F00FBC5FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7FC1A1926824F00FBC5FF /* XCTest.framework */; };
+		DFE7FC1C1926824F00FBC5FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7FC011926824F00FBC5FF /* Foundation.framework */; };
+		DFE7FC1D1926824F00FBC5FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7FC051926824F00FBC5FF /* UIKit.framework */; };
+		DFE7FC251926824F00FBC5FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFE7FC231926824F00FBC5FF /* InfoPlist.strings */; };
+		DFE7FC271926824F00FBC5FF /* TestTokenAgentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE7FC261926824F00FBC5FF /* TestTokenAgentTests.m */; };
+		DFE7FC321926828E00FBC5FF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE7FC311926828E00FBC5FF /* Storyboard.storyboard */; };
+		DFE7FC361926830A00FBC5FF /* OLInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE7FC351926830A00FBC5FF /* OLInitialViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFE7FC1E1926824F00FBC5FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE7FBF61926824F00FBC5FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE7FBFD1926824F00FBC5FF;
+			remoteInfo = TestTokenAgent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF3A0407192A6D5A001F48B7 /* OLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLModel.h; sourceTree = "<group>"; };
+		DF3A0408192A6D5A001F48B7 /* OLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLModel.m; sourceTree = "<group>"; };
+		DF3A040A192A791A001F48B7 /* OLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLApplication.h; sourceTree = "<group>"; };
+		DF3A040B192A791A001F48B7 /* OLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLApplication.m; sourceTree = "<group>"; };
+		DF3A040D192A829D001F48B7 /* OLAddAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLAddAppViewController.h; sourceTree = "<group>"; };
+		DF3A040E192A829D001F48B7 /* OLAddAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLAddAppViewController.m; sourceTree = "<group>"; };
+		DFAF1992193666AB00D44C9F /* OLSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSettingsViewController.h; sourceTree = "<group>"; };
+		DFAF1993193666AB00D44C9F /* OLSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSettingsViewController.m; sourceTree = "<group>"; };
+		DFD646191A02F360007C42C2 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		DFD6461A1A02F360007C42C2 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		DFD6461C1A02F36C007C42C2 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DFE7FBFE1926824F00FBC5FF /* TestTokenAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTokenAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE7FC011926824F00FBC5FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFE7FC031926824F00FBC5FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFE7FC051926824F00FBC5FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFE7FC091926824F00FBC5FF /* TestTokenAgent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTokenAgent-Info.plist"; sourceTree = "<group>"; };
+		DFE7FC0B1926824F00FBC5FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFE7FC0D1926824F00FBC5FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFE7FC0F1926824F00FBC5FF /* TestTokenAgent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestTokenAgent-Prefix.pch"; sourceTree = "<group>"; };
+		DFE7FC101926824F00FBC5FF /* OLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLAppDelegate.h; sourceTree = "<group>"; };
+		DFE7FC111926824F00FBC5FF /* OLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLAppDelegate.m; sourceTree = "<group>"; };
+		DFE7FC131926824F00FBC5FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFE7FC191926824F00FBC5FF /* TestTokenAgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTokenAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE7FC1A1926824F00FBC5FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DFE7FC221926824F00FBC5FF /* TestTokenAgentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTokenAgentTests-Info.plist"; sourceTree = "<group>"; };
+		DFE7FC241926824F00FBC5FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFE7FC261926824F00FBC5FF /* TestTokenAgentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTokenAgentTests.m; sourceTree = "<group>"; };
+		DFE7FC311926828E00FBC5FF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DFE7FC341926830A00FBC5FF /* OLInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLInitialViewController.h; sourceTree = "<group>"; };
+		DFE7FC351926830A00FBC5FF /* OLInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLInitialViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFE7FBFB1926824F00FBC5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE7FC041926824F00FBC5FF /* CoreGraphics.framework in Frameworks */,
+				DFE7FC061926824F00FBC5FF /* UIKit.framework in Frameworks */,
+				DFE7FC021926824F00FBC5FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE7FC161926824F00FBC5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE7FC1B1926824F00FBC5FF /* XCTest.framework in Frameworks */,
+				DFE7FC1D1926824F00FBC5FF /* UIKit.framework in Frameworks */,
+				DFE7FC1C1926824F00FBC5FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF3A0406192A6D38001F48B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF3A0407192A6D5A001F48B7 /* OLModel.h */,
+				DF3A0408192A6D5A001F48B7 /* OLModel.m */,
+				DF3A040A192A791A001F48B7 /* OLApplication.h */,
+				DF3A040B192A791A001F48B7 /* OLApplication.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFE7FBF51926824F00FBC5FF = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC071926824F00FBC5FF /* TestTokenAgent */,
+				DFE7FC201926824F00FBC5FF /* TestTokenAgentTests */,
+				DFE7FC001926824F00FBC5FF /* Frameworks */,
+				DFE7FBFF1926824F00FBC5FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE7FBFF1926824F00FBC5FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FBFE1926824F00FBC5FF /* TestTokenAgent.app */,
+				DFE7FC191926824F00FBC5FF /* TestTokenAgentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFE7FC001926824F00FBC5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC011926824F00FBC5FF /* Foundation.framework */,
+				DFE7FC031926824F00FBC5FF /* CoreGraphics.framework */,
+				DFE7FC051926824F00FBC5FF /* UIKit.framework */,
+				DFE7FC1A1926824F00FBC5FF /* XCTest.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFE7FC071926824F00FBC5FF /* TestTokenAgent */ = {
+			isa = PBXGroup;
+			children = (
+				DFD6461C1A02F36C007C42C2 /* Constants.h */,
+				DFD646191A02F360007C42C2 /* Utils.h */,
+				DFD6461A1A02F360007C42C2 /* Utils.m */,
+				DF3A0406192A6D38001F48B7 /* Model */,
+				DFE7FC33192682CC00FBC5FF /* Controllers */,
+				DFE7FC301926827B00FBC5FF /* Views */,
+				DFE7FC101926824F00FBC5FF /* OLAppDelegate.h */,
+				DFE7FC111926824F00FBC5FF /* OLAppDelegate.m */,
+				DFE7FC131926824F00FBC5FF /* Images.xcassets */,
+				DFE7FC081926824F00FBC5FF /* Supporting Files */,
+			);
+			path = TestTokenAgent;
+			sourceTree = "<group>";
+		};
+		DFE7FC081926824F00FBC5FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC091926824F00FBC5FF /* TestTokenAgent-Info.plist */,
+				DFE7FC0A1926824F00FBC5FF /* InfoPlist.strings */,
+				DFE7FC0D1926824F00FBC5FF /* main.m */,
+				DFE7FC0F1926824F00FBC5FF /* TestTokenAgent-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFE7FC201926824F00FBC5FF /* TestTokenAgentTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC261926824F00FBC5FF /* TestTokenAgentTests.m */,
+				DFE7FC211926824F00FBC5FF /* Supporting Files */,
+			);
+			path = TestTokenAgentTests;
+			sourceTree = "<group>";
+		};
+		DFE7FC211926824F00FBC5FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC221926824F00FBC5FF /* TestTokenAgentTests-Info.plist */,
+				DFE7FC231926824F00FBC5FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFE7FC301926827B00FBC5FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC311926828E00FBC5FF /* Storyboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFE7FC33192682CC00FBC5FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFE7FC341926830A00FBC5FF /* OLInitialViewController.h */,
+				DFE7FC351926830A00FBC5FF /* OLInitialViewController.m */,
+				DF3A040D192A829D001F48B7 /* OLAddAppViewController.h */,
+				DF3A040E192A829D001F48B7 /* OLAddAppViewController.m */,
+				DFAF1992193666AB00D44C9F /* OLSettingsViewController.h */,
+				DFAF1993193666AB00D44C9F /* OLSettingsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFE7FBFD1926824F00FBC5FF /* TestTokenAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE7FC2A1926824F00FBC5FF /* Build configuration list for PBXNativeTarget "TestTokenAgent" */;
+			buildPhases = (
+				DFE7FBFA1926824F00FBC5FF /* Sources */,
+				DFE7FBFB1926824F00FBC5FF /* Frameworks */,
+				DFE7FBFC1926824F00FBC5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestTokenAgent;
+			productName = TestTokenAgent;
+			productReference = DFE7FBFE1926824F00FBC5FF /* TestTokenAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFE7FC181926824F00FBC5FF /* TestTokenAgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE7FC2D1926824F00FBC5FF /* Build configuration list for PBXNativeTarget "TestTokenAgentTests" */;
+			buildPhases = (
+				DFE7FC151926824F00FBC5FF /* Sources */,
+				DFE7FC161926824F00FBC5FF /* Frameworks */,
+				DFE7FC171926824F00FBC5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE7FC1F1926824F00FBC5FF /* PBXTargetDependency */,
+			);
+			name = TestTokenAgentTests;
+			productName = TestTokenAgentTests;
+			productReference = DFE7FC191926824F00FBC5FF /* TestTokenAgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFE7FBF61926824F00FBC5FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = OneLogin;
+				TargetAttributes = {
+					DFE7FC181926824F00FBC5FF = {
+						TestTargetID = DFE7FBFD1926824F00FBC5FF;
+					};
+				};
+			};
+			buildConfigurationList = DFE7FBF91926824F00FBC5FF /* Build configuration list for PBXProject "TestTokenAgent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFE7FBF51926824F00FBC5FF;
+			productRefGroup = DFE7FBFF1926824F00FBC5FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFE7FBFD1926824F00FBC5FF /* TestTokenAgent */,
+				DFE7FC181926824F00FBC5FF /* TestTokenAgentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFE7FBFC1926824F00FBC5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE7FC0C1926824F00FBC5FF /* InfoPlist.strings in Resources */,
+				DFE7FC141926824F00FBC5FF /* Images.xcassets in Resources */,
+				DFE7FC321926828E00FBC5FF /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE7FC171926824F00FBC5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE7FC251926824F00FBC5FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFE7FBFA1926824F00FBC5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3A0409192A6D5A001F48B7 /* OLModel.m in Sources */,
+				DF3A040C192A791A001F48B7 /* OLApplication.m in Sources */,
+				DFAF1994193666AB00D44C9F /* OLSettingsViewController.m in Sources */,
+				DFD6461B1A02F360007C42C2 /* Utils.m in Sources */,
+				DFE7FC0E1926824F00FBC5FF /* main.m in Sources */,
+				DF3A040F192A829D001F48B7 /* OLAddAppViewController.m in Sources */,
+				DFE7FC361926830A00FBC5FF /* OLInitialViewController.m in Sources */,
+				DFE7FC121926824F00FBC5FF /* OLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE7FC151926824F00FBC5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE7FC271926824F00FBC5FF /* TestTokenAgentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFE7FC1F1926824F00FBC5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE7FBFD1926824F00FBC5FF /* TestTokenAgent */;
+			targetProxy = DFE7FC1E1926824F00FBC5FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFE7FC0A1926824F00FBC5FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE7FC0B1926824F00FBC5FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFE7FC231926824F00FBC5FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE7FC241926824F00FBC5FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFE7FC281926824F00FBC5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFE7FC291926824F00FBC5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFE7FC2B1926824F00FBC5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestTokenAgent/TestTokenAgent-Prefix.pch";
+				INFOPLIST_FILE = "TestTokenAgent/TestTokenAgent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFE7FC2C1926824F00FBC5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestTokenAgent/TestTokenAgent-Prefix.pch";
+				INFOPLIST_FILE = "TestTokenAgent/TestTokenAgent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DFE7FC2E1926824F00FBC5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestTokenAgent.app/TestTokenAgent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestTokenAgent/TestTokenAgent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestTokenAgentTests/TestTokenAgentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DFE7FC2F1926824F00FBC5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestTokenAgent.app/TestTokenAgent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestTokenAgent/TestTokenAgent-Prefix.pch";
+				INFOPLIST_FILE = "TestTokenAgentTests/TestTokenAgentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFE7FBF91926824F00FBC5FF /* Build configuration list for PBXProject "TestTokenAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE7FC281926824F00FBC5FF /* Debug */,
+				DFE7FC291926824F00FBC5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE7FC2A1926824F00FBC5FF /* Build configuration list for PBXNativeTarget "TestTokenAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE7FC2B1926824F00FBC5FF /* Debug */,
+				DFE7FC2C1926824F00FBC5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE7FC2D1926824F00FBC5FF /* Build configuration list for PBXNativeTarget "TestTokenAgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE7FC2E1926824F00FBC5FF /* Debug */,
+				DFE7FC2F1926824F00FBC5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFE7FBF61926824F00FBC5FF /* Project object */;
+}

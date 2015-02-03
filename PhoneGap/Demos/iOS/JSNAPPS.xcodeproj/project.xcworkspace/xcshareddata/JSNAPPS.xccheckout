@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A17A8B6-CFE2-42C3-9D8F-F052CD03B3CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JSNAPPS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35ED2A02138AA97D4A113611E01F35ECE102A6EB</key>
+		<string>github.com:onelogin/IOS-NAPPS-JAVASCRIPT-DEMO-APP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JSNAPPS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35ED2A02138AA97D4A113611E01F35ECE102A6EB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:onelogin/IOS-NAPPS-JAVASCRIPT-DEMO-APP.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35ED2A02138AA97D4A113611E01F35ECE102A6EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35ED2A02138AA97D4A113611E01F35ECE102A6EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JSPhonegap</string>
+		</dict>
+	</array>
+</dict>
+</plist>

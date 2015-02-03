@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_sdkta" default="compile.module.sdkta">
+  <dirname property="module.sdkta.basedir" file="${ant.file.module_sdkta}"/>
+  
+  <property name="module.jdk.home.sdkta" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.sdkta" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.sdkta" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.sdkta" value="-encoding UTF-8 -source 1.6 -target 1.6 ${compiler.args}"/>
+  
+  <property name="sdkta.output.dir" value="${module.sdkta.basedir}/out/production/SDKTA"/>
+  <property name="sdkta.testoutput.dir" value="${module.sdkta.basedir}/out/test/SDKTA"/>
+  
+  <path id="sdkta.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="sdkta.module.production.classpath">
+    <path refid="${module.jdk.classpath.sdkta}"/>
+  </path>
+  
+  <path id="sdkta.runtime.production.module.classpath">
+    <pathelement location="${sdkta.output.dir}"/>
+  </path>
+  
+  <path id="sdkta.module.classpath">
+    <path refid="${module.jdk.classpath.sdkta}"/>
+    <pathelement location="${sdkta.output.dir}"/>
+  </path>
+  
+  <path id="sdkta.runtime.module.classpath">
+    <pathelement location="${sdkta.testoutput.dir}"/>
+    <pathelement location="${sdkta.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.sdkta">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.sdkta">
+    <patternset refid="excluded.from.module.sdkta"/>
+  </patternset>
+  
+  <path id="sdkta.module.sourcepath">
+    <dirset dir="${module.sdkta.basedir}">
+      <include name="src"/>
+      <include name="gen"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.sdkta" depends="compile.module.sdkta.production,compile.module.sdkta.tests" description="Compile module SDKTA"/>
+  
+  <target name="compile.module.sdkta.production" depends="register.custom.compilers" description="Compile module SDKTA; production classes">
+    <mkdir dir="${sdkta.output.dir}"/>
+    <javac2 destdir="${sdkta.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.sdkta}/javac">
+      <compilerarg line="${compiler.args.sdkta}"/>
+      <bootclasspath refid="sdkta.module.bootclasspath"/>
+      <classpath refid="sdkta.module.production.classpath"/>
+      <src refid="sdkta.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.sdkta"/>
+    </javac2>
+    
+    <copy todir="${sdkta.output.dir}">
+      <fileset dir="${module.sdkta.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.sdkta.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.sdkta.tests" depends="register.custom.compilers,compile.module.sdkta.production" description="compile module SDKTA; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.sdkta" description="cleanup module">
+    <delete dir="${sdkta.output.dir}"/>
+    <delete dir="${sdkta.testoutput.dir}"/>
+  </target>
+</project>
