@@ -497,6 +497,7 @@
 				DF2E9E971A8140E2008836A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF2E9E981A8140E2008836A4 /* Build configuration list for PBXNativeTarget "SignalTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +506,7 @@
 				DF2E9E9A1A8140E2008836A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
