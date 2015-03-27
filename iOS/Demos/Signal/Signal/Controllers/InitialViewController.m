@@ -31,6 +31,8 @@ typedef NS_ENUM(NSUInteger, SignalState) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [OneLogin SDK].testMode = YES;
+    
     [self registerForNotifications];
 }
 
