@@ -11,6 +11,15 @@
 #import "Constants.h"
 
 /*!
+ * This library can make calls to Production, QA, Shadow and Staging OneLogin Servers. Which server the requests are sent to is determined via a key on NSUserDefaults.
+ *    —> 1337: Point to QA Servers
+ *    —> 3557: Point to Shadow Servers
+ *    —> 5746: Point to Staging Servers
+ *
+ * Anything other than those two codes will make the API Calls point to Production Servers, including no value at all.
+ */
+
+/*!
  @discussion Enumerator for the request types the Token Agent can handle
  */
 typedef NS_ENUM(NSUInteger, OLTokenAgentCallType) {
@@ -26,15 +35,15 @@ typedef NS_ENUM(NSUInteger, OLTokenAgentCallType) {
 
 
 /*!
- @brief Setting this property to @c YES will trigger a Secondary Token Request the next time the App Info List is downloaded.
+ @brief Holds the Scope for the app that called the Token Agent
  */
-@property (nonatomic)           BOOL    secondaryTokenRequestAwaiting;
+@property (nonatomic, readonly) NSString *requestingAppScope;
 
 
 /*!
- @brief Indicates wether a session for NAPPS is currently active.
+ @brief Setting this property to @c YES will trigger a Secondary Token Request the next time the App Info List is downloaded.
  */
-@property (nonatomic, readonly) BOOL    sessionActive;
+@property (nonatomic) BOOL secondaryTokenRequestAwaiting;
 
 
 /*!
@@ -44,12 +53,14 @@ typedef NS_ENUM(NSUInteger, OLTokenAgentCallType) {
 
 
 /*!
- Handles a call to the Token Agent.
+ Handles a call to the Token Agent. This method will return a Secondary Token to the @c successBlock if the request was successful, or a @c OLNAPPSError object to the @c failureBlock if an error is encountered while requesting a Secondary Token.
  Example usage:
  @code
  - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
  {
-    [[NAPPSManager sharedManager] handleTokenAgentCallWithURL:url withBlock:^(OLNAPPSError error) {
+    [[NAPPSManager sharedManager] handleTokenAgentCallWithURL:url executeAutomatically:NO success:^(NSString *token) {
+        NSLog(@"GOT TOKEN FOR SECONDARY APP: %@", token);
+    } failure:^(OLNAPPSError error) {
         switch (error) {
             case OLNAPPSErrorNoSessionActive:{
                 [NAPPSManager sharedManager].secondaryTokenRequestAwaiting = YES;
@@ -66,11 +77,41 @@ typedef NS_ENUM(NSUInteger, OLTokenAgentCallType) {
  @endcode
  @param url
         The URL that's passed to the @c -application:openURL:sourceApplication:annotation method
- @param block
-        Block that returns @c void and receives a @c OLNAPPSError param, which will be @c nil if everything went correctly. The block is executed on the main thread.
+ @param automaticExecution
+        If @c YES, and, if the Secondary Token request was successful, the @c successBlock won't be executed and the Secondary Token (@c NSString*) will be automatically returned to the requesting application.
+ @param successBlock 
+        Block that returns @c void and receives a @c NSString* param, which is the Secondary Token requested by an app. This block is executed on the main thread.
+ @param failureBlock
+        Block tat returns @c void and receives a @c OLNAPPSerror param. This block is executed if something wen't wrong while requesting a Secondary Token. This block is executed on the main thread.
  @return void
  */
-- (void)handleTokenAgentCallWithURL:(NSURL *)url withBlock:(void (^)(OLNAPPSError error))block;
+- (void)handleTokenAgentCallWithURL:(NSURL *)url executeAutomatically:(BOOL)automaticExecution success:(void (^)(NSString *token))successBlock failure:(void (^)(OLNAPPSError error))failureBlock;
+
+
+/*!
+ Requests a Secondary Token for a specific app with a @c scope. If the request was successful the Secondary Token is passed to the @c successBlock, otherwise a @c OLNAPPSError is passed to the @c failureBlock.
+ Example usage:
+ @code
+ ...
+ 
+ [[NAPPSManager sharedManager] requestSecondaryTokenForAppWithScope:@"com.onelogin.Signal" success:^(NSString *token) {
+     NSLog(@"TOKEN: %@", token);
+ } failure:^(OLNAPPSError error) {
+     NSLog(@"%li", error);
+ }];
+ 
+ ...
+ @endcode
+ @param scope 
+        A @c NSString* representing the scope of the application that the Secondary Token is for.
+ @param successBlock
+        Block that returns @c void and receives a @c NSString* param, which is the
+ Secondary Token requested by an app. This block is executed on the main thread.
+ @param failureBlock
+        Block tat returns @c void and receives a @c OLNAPPSerror param. This block is executed if something wen't wrong while requesting a Secondary Token. This block is executed on the main thread.
+ @return void
+ */
+- (void)requestSecondaryTokenForAppWithScope:(NSString *)scope success:(void (^)(NSString *token))successBlock failure:(void (^)(OLNAPPSError error))failureBlock;
 
 
 /*!
@@ -87,7 +128,7 @@ typedef NS_ENUM(NSUInteger, OLTokenAgentCallType) {
         @c NSString* obtained after the user has signed in correctly.
  @return void
  */
-- (void)saveSessionWithDataToken:(NSString *)dataToken dataUserAPIKey:(NSString *)dataUserAPIKey;
+- (void)saveSessionWithDataToken:(NSString *)dataToken JSONWebToken:(NSString *)jwt;
 
 
 /*!
@@ -105,10 +146,10 @@ typedef NS_ENUM(NSUInteger, OLTokenAgentCallType) {
  @param dataUserAPIKey
         @c NSString* obtained after the user has signed in correctly.
  @param block
-        Block that returns @c void and receives no parameters. It is executed after the data has been saved correctly. It is always executed on the main thread.
+        Block that returns @c void and receives no parameters. Use this block to execute custom logic after the data has been saved. This block is executed after the data has been saved correctly and is always executed on the main thread.
  @return void
  */
-- (void)saveSessionWithDataToken:(NSString *)dataToken dataUserAPIKey:(NSString *)dataUserAPIKey andBlock:(void (^)())block;
+- (void)saveSessionWithDataToken:(NSString *)dataToken JSONWebToken:(NSString *)jwt andBlock:(void (^)())block;
 
 
 /*!
