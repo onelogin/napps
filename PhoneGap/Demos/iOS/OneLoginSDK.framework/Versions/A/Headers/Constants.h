@@ -31,41 +31,29 @@ typedef NS_ENUM(NSInteger, OLNAPPSError) {
     OLNAPPSErrorBearerTokenRevoked                 = 1205,
     OLNAPPSErrorUserDisabled                       = 1206,
     OLNAPPSErrorCouldNotFindBearerToken            = 1207,
-    OLNAPPSErrorNoSessionActive                    = 1208,
-    OLNAPPSErrorDeviceCouldNotBeEnrolled           = 1209,
     OLNAPPSErrorTokenAgentNotInstalled             = 1300,
+    OLNAPPSErrorNoSessionActive                    = 1500,
+    OLNAPPSErrorDeviceCouldNotBeEnrolled           = 1600,
     OLNAPPSErrorNone                               = 0
 };
 
 inline __attribute__((always_inline)) OLNAPPSError OLNAPPSErrorCodeFromNSString(NSString *errorCode)
 {
-    if ([errorCode isEqualToString:@"network_not_available"]) {
-        return OLNAPPSErrorNetworkNotAvailable;
-    }else if ([errorCode isEqualToString:@"idp_did_not_respond"]) {
-        return OLNAPPSErrorIDPDidNotRespond;
-    }else if ([errorCode isEqualToString:@"requesting_app_does_not_have_permission"]) {
-        return OLNAPPSErrorRequestingAppDoesNotHavePermission;
-    }else if ([errorCode isEqualToString:@"secondary_token_request_rejected"]) {
-        return OLNAPPSErrorSecondaryTokenRequestRejected;
-    }else if ([errorCode isEqualToString:@"app_info_list_refresh_failed"]) {
-        return OLNAPPSErrorAppInfoListRefreshFailed;
-    }else if ([errorCode isEqualToString:@"bearer_token_expired"]) {
-        return OLNAPPSErrorBearerTokenExpired;
-    }else if ([errorCode isEqualToString:@"bearer_token_revoked"]) {
-        return OLNAPPSErrorBearerTokenRevoked;
-    }else if ([errorCode isEqualToString:@"user_disabled"]) {
-        return OLNAPPSErrorUserDisabled;
-    }else if ([errorCode isEqualToString:@"bearer_token_not_found"]) {
-        return OLNAPPSErrorCouldNotFindBearerToken;
-    }else if ([errorCode isEqualToString:@"token_agent_not_installed"]) {
-        return OLNAPPSErrorTokenAgentNotInstalled;
-    }else if ([errorCode isEqualToString:@"no_session_active"]) {
-        return OLNAPPSErrorNoSessionActive;
-    }else if ([errorCode isEqualToString:@"device_could_not_be_enrolled"]) {
-        return OLNAPPSErrorDeviceCouldNotBeEnrolled;
-    }else {
-        return OLNAPPSErrorNone;
-    }
+    NSDictionary *mappings = @{
+                               @"network_not_available": @(OLNAPPSErrorNetworkNotAvailable),
+                               @"idp_did_not_respond": @(OLNAPPSErrorIDPDidNotRespond),
+                               @"requesting_app_does_not_have_permission": @(OLNAPPSErrorRequestingAppDoesNotHavePermission),
+                               @"secondary_token_request_rejected": @(OLNAPPSErrorSecondaryTokenRequestRejected),
+                               @"app_info_list_refresh_failed": @(OLNAPPSErrorAppInfoListRefreshFailed),
+                               @"bearer_token_expired": @(OLNAPPSErrorBearerTokenExpired),
+                               @"user_disabled": @(OLNAPPSErrorUserDisabled),
+                               @"bearer_token_not_found": @(OLNAPPSErrorCouldNotFindBearerToken),
+                               @"token_agent_not_installed": @(OLNAPPSErrorTokenAgentNotInstalled),
+                               @"no_session_active": @(OLNAPPSErrorNoSessionActive),
+                               @"device_could_not_be_enrolled": @(OLNAPPSErrorDeviceCouldNotBeEnrolled)
+                               };
+    
+    return (OLNAPPSError)[mappings[errorCode] integerValue];
 }
 
 inline __attribute__((always_inline)) NSString * NSStringFromOLNAPPSErrorCode(OLNAPPSError error)
