@@ -31,9 +31,9 @@ typedef NS_ENUM(NSInteger, OLNAPPSError) {
     OLNAPPSErrorBearerTokenRevoked                 = 1205,
     OLNAPPSErrorUserDisabled                       = 1206,
     OLNAPPSErrorCouldNotFindBearerToken            = 1207,
+    OLNAPPSErrorTokenAgentNotInstalled             = 1300,
     OLNAPPSErrorNoSessionActive                    = 1500,
     OLNAPPSErrorDeviceCouldNotBeEnrolled           = 1600,
-    OLNAPPSErrorTokenAgentNotInstalled             = 1300,
     OLNAPPSErrorNone                               = 0
 };
 
