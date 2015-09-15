@@ -6,4 +6,10 @@
     <dimen name="farleft">10dp</dimen>
     <dimen name="leftmost">10dp</dimen>
     <dimen name="stipperFont">70dp</dimen>
+
+    <dimen name="title">39dp</dimen>
+    <dimen name="tagline">19dp</dimen>
+    <dimen name="tamessage">33dp</dimen>
+    <dimen name="button">20dp</dimen>
+
 </resources>

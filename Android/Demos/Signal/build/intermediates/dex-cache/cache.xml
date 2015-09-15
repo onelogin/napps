@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/Volumes/DATA/WORK/OneLogin/Android/signal-android/app/build/intermediates/pre-dexed/debug/napps_sdk-bf8b89346ec9bad9ece724b1f06e890ddca4bd8d.jar"
-        jar="/Volumes/DATA/WORK/OneLogin/Android/signal-android/app/libs/napps_sdk.jar"
+        jar="/Users/monicapeters/Development/Android/signal-android/app/libs/napps_sdk.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="f828c0abdac997753c8a619b6dea95a0ed8c575a"/>
+        sha1="dd5367c71348d6502be546a847e7fa30c3aa56f0">
+        <dex dex="/Users/monicapeters/Development/Android/signal-android/app/build/intermediates/pre-dexed/debug/napps_sdk-25494d185d6d192b68e30fff862c98d5ccc8049f.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

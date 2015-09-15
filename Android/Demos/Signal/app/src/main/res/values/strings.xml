@@ -2,9 +2,25 @@
 <resources>
 
     <string name="app_name">Signal</string>
+    <string name="app_version">version</string>
     <string name="action_settings">Settings</string>
 
     <color name="blackcolor">#000000</color>
     <color name="rawumber">#FFFFFF</color>
+
+    <color name="lightest">#FFFFFF</color>
+    <color name="lighter">#F7FDFA</color>
+    <color name="light">#D9FFA9</color>
+    <color name="medium">#6DDCE4</color>
+    <color name="dark">#1693A5</color>
+    <color name="darker">#012D44</color>
+    <color name="darkest">#000000</color>
+
+    <string name="title_activity_entry">Signal</string>
+
+    <string name="titleTV">Let\'s get started!</string>
+    <string name="taglineTV">Let\'s make sure you have the token agent before we begin.</string>
+    <string name="tamessageTV">looking for token agent...</string>
+    <string name="actionButtonText">Continue</string>
 
 </resources>

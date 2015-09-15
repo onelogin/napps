@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="onelogin.com.signal"
-    android:screenOrientation="portrait">
+    android:screenOrientation="portrait" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
-
 
     <application
         android:allowBackup="true"
@@ -16,25 +15,30 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:screenOrientation="portrait"
-            android:name="onelogin.com.signal.Signal"
-            android:label="@string/app_name" >
-
+            android:name="onelogin.com.signal.entry.EntryActivity"
+            android:label="@string/title_activity_entry"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
 
+        <activity
+            android:name="onelogin.com.signal.Signal"
+            android:label="Signal"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="onelogin.com.signal.Signal" />
+                <data
+                    android:host="onelogin.com.signal.Signal"
+                    android:scheme="SIGNAL" />
             </intent-filter>
-
         </activity>
-    </application>
 
+    </application>
 
 </manifest>

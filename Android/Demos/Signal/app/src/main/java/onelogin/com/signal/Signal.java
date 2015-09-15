@@ -1,14 +1,21 @@
 package onelogin.com.signal;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.onelogin.napps.sdk.OLException;
+import com.onelogin.napps.sdk.OLNapps;
+import com.onelogin.napps.sdk.OLToken;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -19,42 +26,37 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.util.Log;
-import android.widget.ListView;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.view.View;
-import android.widget.Toast;
-import android.content.Intent;
-import android.net.Uri;
-
-import com.onelogin.napps.sdk.OLError;
-import com.onelogin.napps.sdk.OLException;
-import com.onelogin.napps.sdk.OLNapps;
-import com.onelogin.napps.sdk.OLToken;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Signal extends Activity {
     private SimpleAdapter adpt;
     List<Contact> result;
     private static final String TAG = "SIGNAL";
-    private boolean isTAInstaled = false;
-    //napps lib
+    private boolean isTAInstalled = false;
     OLNapps OLNAPPS;
 
+    /* NAPPS Tutorial:
+     This is where we handle the secondary token coming in from the Token Agent.
+     Gets the Uri which contains the JWT secondary token.
+     If your application also handles other URIs, you should add logic here to determine
+     if it's a URI your app can handle, and if not then pass it off to the NAPPS SDK
+     */
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //---------------NAPPS------------
-        //init lib
-
+        //Initialize NAPPS
         try {
             OLNAPPS = OLNapps.SDK(this);
         } catch (OLException e) {
@@ -62,73 +64,28 @@ public class Signal extends Activity {
         }
 
         Uri data = getIntent().getData();
-        //get result
+
+        //get result from the URI
         if (data != null) {
             //get secondary token
             try{
                 OLToken token = OLNAPPS.getToken(data);
+                // Did we get a token back ?
                 if (token.getError() == 0) {
                     Toast.makeText(this, "Token: " + token.getSecondaryToken(), Toast.LENGTH_LONG).show();
-                    //continue work programm
+                    //show Tweets
                     initList();
                 } else {
+                    //show Error Message
                     Toast.makeText(this, "Error: " + token.getError(), Toast.LENGTH_LONG).show();
                 }
             }catch (OLException ex){
                 Log.e(TAG, ex.getMessage());
             }
-
-        } else {
-
-
-            //test with Launcher NAPPS
-            try {
-                isTAInstaled = OLNAPPS.isTokenAgentInstalled();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-                Log.e(TAG, ex.getMessage());
-            }
-            //if TA is installed, start TA to get secondary token
-            if (isTAInstaled) {
-                //start TA
-                try{
-                    OLNAPPS.requestSecondaryToken("http://onelogin.com.signal.Signal://");
-                }catch (OLException ex){
-                    Log.e(TAG, ex.getMessage());
-                }
-            }else{
-
-                //if Launcher NAPPS not install, set MOCK TA
-                OLNAPPS.setTokenAgentPackageName("com.onelogin.mockta");
-                OLNAPPS.setTokenAgentURLScheme("http://com.onelogin.mockta://");
-
-                try {
-                    isTAInstaled = OLNAPPS.isTokenAgentInstalled();
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                    Log.e(TAG, ex.getMessage());
-                }
-
-                if (isTAInstaled) {
-                    //start TA
-                    try{
-                        OLNAPPS.requestSecondaryToken("http://onelogin.com.signal.Signal://");
-                    }catch (OLException ex){
-                        Log.e(TAG, ex.getMessage());
-                    }
-                }else{
-                    Toast.makeText(this, "Error: " + OLError.NAPPSTokenAgentNotInstalled, Toast.LENGTH_LONG).show();
-                }
-
-            }
-
-
-
         }
-
-        //-------------------------------
     }
 
+    //build List of Tweets
     private void initList() {
         adpt = new SimpleAdapter(new ArrayList<Contact>(), this);
         ListView lView = (ListView) findViewById(R.id.listview);
