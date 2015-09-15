@@ -41,7 +41,7 @@ public class EntryActivity extends Activity {
     private void setTestMode() {
         try {
             OLNapps.SDK(this).setTokenAgentPackageName("com.onelogin.mockta");
-            OLNapps.SDK(this).setTokenAgentURLScheme("http://com.onelogin.mockta://");
+            OLNapps.SDK(this).setTokenAgentURLScheme("olta://com.onelogin.mockta://");
         } catch(OLException ex) {
             ex.printStackTrace();
         }

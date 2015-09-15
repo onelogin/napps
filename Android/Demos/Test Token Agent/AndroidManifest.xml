@@ -12,7 +12,7 @@
             </intent-filter>
 
             <intent-filter>
-                <data android:scheme="http" android:host="com.onelogin.mockta" />
+                <data android:scheme="olta" android:host="com.onelogin.mockta" />
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
