@@ -10,31 +10,31 @@
 	<string>TestTokenAgent</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AD11BE34D3D3F9619CE76CA58F3F3E66BF4BACB0</key>
-		<string>github.com:onelogin/napps.git</string>
+		<key>9B1755C910B3A4542DC0185DD0934FBB1156E352</key>
+		<string>github.com:onelogin/iOS-NAPPS-MOCK-TA.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/Demos/Test Token Agent/TestTokenAgent.xcodeproj</string>
+	<string>TestTokenAgent.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AD11BE34D3D3F9619CE76CA58F3F3E66BF4BACB0</key>
-		<string>../../../../..</string>
+		<key>9B1755C910B3A4542DC0185DD0934FBB1156E352</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:onelogin/napps.git</string>
+	<string>github.com:onelogin/iOS-NAPPS-MOCK-TA.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AD11BE34D3D3F9619CE76CA58F3F3E66BF4BACB0</string>
+	<string>9B1755C910B3A4542DC0185DD0934FBB1156E352</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AD11BE34D3D3F9619CE76CA58F3F3E66BF4BACB0</string>
+			<string>9B1755C910B3A4542DC0185DD0934FBB1156E352</string>
 			<key>IDESourceControlWCCName</key>
-			<string>NAPPS</string>
+			<string>TestTokenAgent</string>
 		</dict>
 	</array>
 </dict>
