@@ -1,25 +1,12 @@
-# OneLogin NAPPS SDKs
+# OneLogin NAPPS Toolkits
 
-In this repository you'll find the SDKs and example projects that will help you integrate OneLogin's NAPPS to your application.
+The OneLogin NAPPS Toolkits provide SDKs and demo projects that will help you integrate OneLogin's NAPPS into your native application. We provide toolkits for iOS, Android, and PhoneGap.
 
-## Components
+For more details, see the following OneLogin developer docs:
 
+* [Intro to NAPPS](https://developers.onelogin.com/v1.0/page/napps-toolkits)
+* [NAPPS for Android](https://developers.onelogin.com/v1.0/page/napps-sdk-for-android)
+* [NAPPS for iOS](https://developers.onelogin.com/v1.0/page/napps-sdk-for-ios)
+* [NAPPS App Server Reference](https://developers.onelogin.com/v1.0/page/app-server-reference)
 
-- On the Android and iOS directories you’ll find:
-
-	1. `/Demos`: This directory contains example projects that demonstrate how you can integrate NAPPS to your own application.
-
-		- Signal: The client side application.
-		- Test Token Agent: A slimmed-down version of our Token Agent. The Test Token Agent has the exact same interface as the real Token Agent. This way you can test the integration without actually communicating with the OneLogin NAPPS service.
-
-	2. `/SDK`: This directory contains the `.framework` (iOS) or `.jar` (Android) that you need to add to your project.
-
-	3. `Reference.pdf`: This is a detailed guide on how to add the NAPPS SDKs to your native project.
-
-- On the PhoneGap directory you’ll find:
-	1. `/Demos`: This directory contains example projects that demonstrate how you can integrate NAPPS to your own PhoneGap application, either on iOS or Android (coming soon).
-
-**Attention:** The PhoneGap example projects can be used with the native Test Token Agents on each platform.
-
-- On the Server directory you’ll find:
-	1. `OneLogin NAPPs Server Reference.pdf`: This document will help  you set up the server-side part of your application that will use NAPPs.
+**Note:** The PhoneGap demo projects can be used with the Test Token Agents for the Android and iOS platforms.
